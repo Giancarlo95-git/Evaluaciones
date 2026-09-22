@@ -1,0 +1,31 @@
+<h2>Solicitudes académicas</h2>
+
+@if (solicitudes.length > 0) {
+  <p>Hay solicitudes registradas en el sistema.</p>
+}
+
+<p>Total de solicitudes: {{ solicitudes.length }}</p>
+
+@for (solicitud of solicitudes; track solicitud.codigo) {
+  <div>
+    <h3>{{ solicitud.tipo }}</h3>
+    <p>{{ solicitud.descripcion }}</p>
+    <p>Estado: {{ solicitud.estado }}</p>
+
+    <button (click)="verDetalle(solicitud)">
+        Ver detalle
+    </button>
+  </div>
+}
+
+@if (solicitudSeleccionada) {
+  <div>
+    <h2>Detalle de la solicitud</h2>
+
+    <p>Código: {{ solicitudSeleccionada.codigo }}</p>
+    <p>Tipo: {{ solicitudSeleccionada.tipo }}</p>
+    <p>Descripción: {{ solicitudSeleccionada.descripcion }}</p>
+    <p>Fecha: {{ solicitudSeleccionada.fecha }}</p>
+    <p>Estado: {{ solicitudSeleccionada.estado }}</p>
+  </div>
+}

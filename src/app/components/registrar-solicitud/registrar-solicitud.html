@@ -1,0 +1,35 @@
+<h2>Registrar Nueva Solicitud</h2>
+
+<form [formGroup]="form" (ngSubmit)="guardar()">
+  <div class="form-group">
+    <label for="alumno">Alumno:</label>
+    <select id="alumno" formControlName="alumnoId">
+      <option value="">-- Seleccione un alumno --</option>
+      @for (alumno of alumnos; track alumno.codigo) {
+        <option [value]="alumno.codigo">{{ alumno.nombres || alumno.nombre }} ({{ alumno.codigo }})</option>
+      }
+    </select>
+    @if (isInvalid('alumnoId')) {
+      <span class="error">Debe seleccionar un alumno.</span>
+    }
+  </div>
+
+  <div class="form-group">
+    <label for="tipo">Tipo de Solicitud:</label>
+    <select id="tipo" formControlName="tipo">
+      <option value="Académica">Académica</option>
+      <option value="Administrativa">Administrativa</option>
+      <option value="Especial">Especial</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" formControlName="descripcion" rows="4" placeholder="Mínimo 10 caracteres"></textarea>
+    @if (isInvalid('descripcion')) {
+      <span class="error">La descripción es obligatoria (mínimo 10 caracteres).</span>
+    }
+  </div>
+
+  <button type="submit">Registrar Solicitud</button>
+</form>
