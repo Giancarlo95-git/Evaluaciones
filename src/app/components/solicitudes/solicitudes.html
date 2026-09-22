@@ -29,3 +29,20 @@
     <p>Estado: {{ solicitudSeleccionada.estado }}</p>
   </div>
 }
+
+<!-- BLOQUE ACTIVIDAD 4: Consumo de API REST con HttpClient -->
+<section style="margin-top: 2rem; padding: 1rem; border: 1px solid #ccc; border-radius: 8px;">
+  <h2>Datos Remotos consumidos desde API REST</h2>
+
+  @if (datosApi.length > 0) {
+    <ul>
+      @for (item of datosApi; track item.id) {
+        <li style="margin-bottom: 0.5rem;">
+          <strong>ID {{ item.id }}:</strong> {{ item.title }}
+        </li>
+      }
+    </ul>
+  } @else {
+    <p>Cargando datos desde la API REST...</p>
+  }
+</section>
