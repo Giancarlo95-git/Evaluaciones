@@ -81,28 +81,5 @@ El uso de componentes Standalone y servicios centralizados con `@Injectable` per
 **Experiencia de Usuario e Integridad de Datos (Actividad 3):**
 La implementación de Formularios Reactivos con `ReactiveFormsModule` y validadores dinámicos (`Validators.required`, `Validators.minLength`) asegura la captura correcta de información en tiempo real antes de registrar la solicitud en el sistema.
 
-<<<<<<< HEAD
 **Asincronía y Consumo de Servicios Web (Actividad 4):**
 La integración de `provideHttpClient()` junto con los Observables de RxJS facilita la conexión asíncrona con fuentes de datos externas (API REST), permitiendo actualizar dinámicamente la interfaz sin necesidad de recargar la página web.
-=======
------------------------------------------------------------------------
-
-**** REALIZADO **** GIANCARLO QUISPE
-Actividad 1 — TypeScript
-Interfaces/tipos, Tipado estático, Módulos ES6+, Ejecución sin backend.
-Conclusiones:
-
-La Actividad 1 permitió establecer una base sólida para el desarrollo de la Plataforma de Gestión de Solicitudes Académicas, aplicando TypeScript mediante tipado estático, interfaces y módulos, junto con características de ES6+. Además, se comprobó la ejecución y compilación del código, dejando una estructura organizada que podrá ser utilizada en las siguientes etapas del proyecto.
-
-**** REALIZADO **** JOSÉ
-Actividad 2 — Angular
-Componentes Standalone, Data binding (Interpolación y Event Binding), Directivas estructurales (@for, @if), Servicio + @Injectable.
-
-**** REALIZADO **** ROBERTO PALACIOS
-Actividad 3 — Angular
-Formulario reactivo (FormBuilder, ReactiveFormsModule), Validaciones dinámicas (Validators.required, Validators.minLength), Inyección con inject(), Enrutamiento y Navegación (app.routes.ts, Router, routerLink).
-
-**** REALIZADO **** ROBERTO PALACIOS
-Actividad 4 — Angular + API
-HttpClient (`provideHttpClient`), Servicio centralizado con API REST, Manejo de Observables con RxJS (`subscribe`), Renderizado dinámico de datos remotos en vista HTML.
->>>>>>> f5f253a183f3f1312c2579f7728a7a4e44371193
