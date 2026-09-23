@@ -174,6 +174,9 @@ npx tsx src/app/data/solicitudes.ts
 **** REALIZADO **** GIANCARLO QUISPE
 Actividad 1 — TypeScript
 Interfaces/tipos, Tipado estático, Módulos ES6+, Ejecución sin backend.
+Conclusiones:
+
+La Actividad 1 permitió establecer una base sólida para el desarrollo de la Plataforma de Gestión de Solicitudes Académicas, aplicando TypeScript mediante tipado estático, interfaces y módulos, junto con características de ES6+. Además, se comprobó la ejecución y compilación del código, dejando una estructura organizada que podrá ser utilizada en las siguientes etapas del proyecto.
 
 **** REALIZADO **** JOSÉ
 Actividad 2 — Angular
