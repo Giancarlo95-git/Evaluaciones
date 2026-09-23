@@ -68,8 +68,6 @@ npx ng serve
 
 Video público de YouTube: https://www.youtube.com/watch?v=aoxi8EXM6ZA&feature=youtu.be 
 
-Todos los integrantes deben participar en la exposición con sus cámaras prendidas y explicar el procedimiento, la solución desarrollada y las decisiones tomadas.
-
 ## 7. Conclusiones
 
 **Base Estructural y Tipado Estático (Actividad 1):**
